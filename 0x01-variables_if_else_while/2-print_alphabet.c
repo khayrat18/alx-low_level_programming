@@ -1,13 +1,13 @@
 #include <stdio.h>
 /**
- *main - Main entry 
+ * main - Main entry
  *
  * Return: Always 0
- */
+*/
 int main(void)
 {
-char ch = 'i';
-for (i = 'a'; i <= 'z'; i++)
+char ch = 'a';
+for (ch = 'a'; ch <= 'z'; ch++)
 putchar(ch);
 return (0);
 }
