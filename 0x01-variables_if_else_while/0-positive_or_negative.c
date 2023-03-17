@@ -15,7 +15,7 @@ int main(void)
 
 if (n > 0)
 {
-printf("%d is positive\n", rand);
+printf("%lf is positive\n",);
 }
 else if
 (n == 0)
