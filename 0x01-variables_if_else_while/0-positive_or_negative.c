@@ -1,5 +1,4 @@
-#include <stdlib.h>
-#include <time.h>
+#include <stio.h>
 /**
  * main - Main Entry
  *
