@@ -11,7 +11,7 @@
 int main(void)
 {
 	int n;
-	int m = n % 10
+	int m = n % 10;
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 scanf("%d", &n);
