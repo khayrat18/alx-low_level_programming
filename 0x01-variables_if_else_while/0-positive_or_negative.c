@@ -15,16 +15,16 @@ int main(void)
 
 if (n > 0)
 {
-printf("%lf is positive\n",);
+printf("%lf is positive\n");
 }
 else if
 (n == 0)
 {
-printf("%d is zero\n", rand);
+printf("%lf is zero\n");
 }
 else
 {
-	printf("%d is negative\n", rand);
+	printf("%lf is negative\n");
 }
 	return (0);
 }
