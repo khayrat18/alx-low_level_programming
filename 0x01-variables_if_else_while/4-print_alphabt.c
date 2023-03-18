@@ -10,6 +10,6 @@ char i;
 for (i = 'a'; i <= 'z' ; i++)
 if (i != 'q' && i != 'e')
 putchar(i);
-putchar('\n')
+putchar('\n');
 return (0);
 }
