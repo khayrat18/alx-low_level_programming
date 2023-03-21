@@ -13,7 +13,8 @@ putchar('\n');
 }
 int main(void)
 {
-print_alphabet(i);
+int i;
+print_alphabet();
 return (0);
 }
 
