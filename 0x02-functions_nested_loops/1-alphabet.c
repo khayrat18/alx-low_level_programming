@@ -17,4 +17,3 @@ int i;
 print_alphabet();
 return (0);
 }
-
