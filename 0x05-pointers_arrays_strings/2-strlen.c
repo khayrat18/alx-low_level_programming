@@ -1,4 +1,5 @@
 #include "main.h"
+#include <string.h>
 
 
 /**
@@ -12,7 +13,7 @@
 int _strlen(char *s)
 {
 
-int len = 3;
+int len;
 
 while (*s != '\0')
 {
