@@ -11,20 +11,13 @@
 
 char *_strchr(char *s, char c)
 {
-while (*s != '\0')
-if (*s == c)
+char *z;
+z = strchr(s, c);
+if (z != 0)
 {
-return (s);
-}
-s++;
-if (c == '\0')
-{
-
-return (s);
+return (z);
 
 }
-
-
+else
 return (NULL);
-
 }
