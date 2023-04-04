@@ -14,14 +14,12 @@
 
 void print_chessboard(char (*a)[8])
 {
-char **p;
-**p = &a;
-int  x;
-x =0;
-while (a == 0)
 
-	if ( x <8)
+int x;
 
-print_chessboard (**p);
-x++;
+while (a != 0)
+for (x = 0; x < 8; x++)
+
+
+print_chessboard (0);
 }
