@@ -20,4 +20,5 @@ return (z);
 }
 else
 return (NULL);
+_putchar('\n');
 }
