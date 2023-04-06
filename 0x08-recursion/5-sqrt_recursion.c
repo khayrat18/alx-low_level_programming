@@ -2,7 +2,8 @@
 #include <math.h>
 
 
-/** get_sqrt - functions to mathematically determine the square root
+/**
+ * get_sqrt - functions to mathematically determine the square root
  *
  * @val: whose root is to be found;
  *
@@ -13,7 +14,6 @@
 
 int get_sqrt(int val, int rt)
 {
-	
 	if ((rt * rt) == val)
 		return (rt);
 
@@ -29,14 +29,14 @@ int get_sqrt(int val, int rt)
  *
  * @n: number to be checked
  *
- * return: always 1, otherwise 0
+ * Return: always 1, otherwise 0
  */
 
 int _sqrt_recursion(int n)
 {
 int rt;
 rt = 0;
-	
+
 if (n == 1)
 {
 return (1);
