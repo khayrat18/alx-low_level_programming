@@ -1,17 +1,19 @@
 #include <stdio.h>
-#include <stdlib.h>
 #include "main.h"
 
+/**
+ * main - prints the name of the program
+ * @argc: number of arguments
+ * @argv: array of arguments
+ *
+ * Return: always 0
+ */
 
-int _whatsmyname(int i, char *s)
+int main(int argc __attribute__((unused)), char *argv[])
 {
+	printf("%s\n", *argv);
 
-if (i == 0)
-{
-_putchar(s[i]);
+	return (0);
 }
-return(0);
 
 
-
-}
