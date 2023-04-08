@@ -2,7 +2,7 @@
 #define MAIN_H
 
 int _putchar (char c);
-int whatsmyname(int i, char *s);
+int _whatsmyname(int i, char *s);
 
 
 
