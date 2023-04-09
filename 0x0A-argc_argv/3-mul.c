@@ -1,6 +1,6 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include "main.h"
-
 
 /**
  * _atoi - changes string to integer
@@ -10,20 +10,26 @@
  * Return: the int converted to string
  */
 
-
 int _atoi(char *s)
 {
-int i;
-int res;
-res = 0;
+int res = 0;
+int sign = 1;
+int i = 0;
 
-for (i = 0; s[i] != '\0'; i++)
-res = res * 10 + s[i] - '0';
-
-return (res);
+if (s[0] == '-')
+{
+sign = -1;
+i++;
 }
+for (; s[i] != '\0'; i++)
+{
+if (s[i] <= '0' || s[i] >= '9')
+	return (0);
+res = res * 10 + s[i] - '0';
+}
+return (sign *res);
 
-
+}
 
 /**
  * main - multiplies two numbers
