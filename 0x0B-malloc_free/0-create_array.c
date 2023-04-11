@@ -1,4 +1,5 @@
 #include <stdlib.h>
+#include <string.h>
 #include "main.h"
 
 /**
@@ -31,7 +32,7 @@ char *create_array(unsigned int size, char c)
 	i++;
 	}
 
-	s[i] = 0;
+	s[i] = '\0';
 	return (s);
 
 
