@@ -3,7 +3,7 @@
 #include "main.h"
 
 /**
- * *_strdup
+ * *_strdup -  returns a pointer to a newly allocated space
  *
  * @str: string to be checked
  *
@@ -14,7 +14,7 @@ char *_strdup(char *str)
 {
 	char *ptr;
 
-	ptr = ((char * )malloc(strlen(str) * sizeof(char)+1));
+	ptr = ((char *)malloc(strlen(str) * sizeof(char)));
 	if (ptr == 0)
 	{
 		return (NULL);
