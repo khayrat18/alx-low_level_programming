@@ -21,11 +21,12 @@ s = malloc(strlen(s1) + strlen(s2) + 1 * sizeof(char));
 	{
 		return (NULL);
 	}
-	if (s != NULL)
+	if (s == NULL)
 	{
+		return (NULL);
+	}
 	strcat(s, s1);
 	strcat(s, s2);
-	}
 	return (s);
 }
 
