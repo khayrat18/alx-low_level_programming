@@ -22,16 +22,17 @@ int r;
 
 ptr = malloc(sizeof(int *) * height);
 if (width <= 0 || height <= 0)
-{
+
 return (NULL);
-}
+
 if (ptr == NULL)
 return (NULL);
 
-for (i = 0; i < width; i++)
+for (i = 0; i < height; i++)
 {
-ptr[i] = malloc(sizeof(int *) * width);
-if (ptr [i] == NULL)
+ptr[i] = malloc(sizeof(int) * width);
+if (ptr[i] == NULL)
+
 {
 for (; i >= 0; i--)
 free(ptr[i]);
