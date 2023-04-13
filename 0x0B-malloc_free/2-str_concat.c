@@ -14,7 +14,7 @@
 char *str_concat(char *s1, char *s2)
 {
 
-char *conc;
+char *conct;
 int x;
 int y;
 
@@ -24,24 +24,24 @@ int y;
 		s2 = "";
 for (x = 0; s1[x] != '\0'; x++)
 for (y = 0; s2[y] != '\0'; y++)
-conc = malloc(sizeof(char) * (x + y + 1));
-	if (conc == NULL)
+conct = malloc(sizeof(char) * (x + y + 1));
+	if (conct == NULL)
 	{
 		return (NULL);
 	}
 	x = y = 0;
 	while (s1[x] != '\0')
 	{
-		conc[x] = s1[x];
+		conct[x] = s1[x];
 		x++;
 	}
 	while (s2[y] != '\0')
 	{
-		conc[x] = s2[y];
+		conct[x] = s2[y];
 		x++, y++;
 	}
-	conc[x] = '\0';
-	return (conc);
+	conct[x] = '\0';
+	return (conct);
 }
 
 
