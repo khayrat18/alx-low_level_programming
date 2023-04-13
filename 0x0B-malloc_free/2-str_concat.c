@@ -24,23 +24,13 @@ int y;
 		s2 = "";
 for (x = 0; s1[x] != '\0'; x++)
 for (y = 0; s2[y] != '\0'; y++)
-conct = malloc(sizeof(char) * (x + y + 1));
+conct = malloc(strlen(s1) + strlen(s2) + 1 * sizeof(char));
 	if (conct == NULL)
 	{
 		return (NULL);
 	}
-	x = y = 0;
-	while (s1[x] != '\0')
-	{
-		conct[x] = s1[x];
-		x++;
-	}
-	while (s2[y] != '\0')
-	{
-		conct[x] = s2[y];
-		x++, y++;
-	}
-	conct[x] = '\0';
+	strcat(conct, s1);
+	strcat(conct, s2);
 	return (conct);
 }
 
