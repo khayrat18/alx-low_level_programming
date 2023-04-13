@@ -24,7 +24,7 @@ int y;
 		s2 = "";
 for (x = 0; s1[x] != '\0'; x++)
 for (y = 0; s2[y] != '\0'; y++)
-conc = malloc(strlen(s1) + strlen(s2) + 1 * sizeof(char));
+conc = malloc(sizeof(char) * (x + y + 1));
 	if (conc == NULL)
 	{
 		return (NULL);
