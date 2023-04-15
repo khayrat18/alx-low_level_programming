@@ -7,6 +7,7 @@
  *
  * @s1: string to be checked
  * @s2: string to be checked
+ * @n: number of bytes from s2 to concatenate to s1
  *
  * Return: return pointer
  */
@@ -14,20 +15,23 @@
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 char *conct;
-unsigned int k;
+unsigned int len1;
+unsigned int len2;
 
-	if (n >= strlen(s2))
-		conct = malloc(strlen(s1) + strlen(s2) + 1 * sizeof(char));
-	else
-	 conct = malloc(strlen(s1) + n + 1 * sizeof(char));
+
+
+	len1 = strlen(s1);
+	len2 = strlen(s2);
+
+	if (n > len2)
+		len2 = n;
+	conct = malloc(len1 + len2 + 1 * sizeof(char));
 	if (conct == NULL)
 	{
 		return (NULL);
 	}
-	for (k = 0; k < strlen(s1); k++)
-		conct[k] = s1[k];
-	for (k = 0; k < strlen(s2); k++)
-		conct[k + strlen(s1)] = s2[k];
-	conct[strlen(s1) + strlen(s2)] = '\0';
-			return (conct);
+	memcpy(conct, s1, len1);
+	memcpy(conct + len1, s2, len2);
+	conct[len1 + len2] = '\0';
+		return (conct);
 }
