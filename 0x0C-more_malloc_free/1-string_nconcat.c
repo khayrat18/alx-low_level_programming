@@ -17,14 +17,13 @@ char *conct;
 unsigned int k;
 
 	if (n >= strlen(s2))
-		n = strlen(s2);
-
-conct = malloc(strlen(s1) + strlen(s2) + 1 * sizeof(char));
+		conct = malloc(strlen(s1) + strlen(s2) + 1 * sizeof(char));
+	else
+	 conct = malloc(strlen(s1) + n + 1 * sizeof(char));
 	if (conct == NULL)
 	{
 		return (NULL);
 	}
-	
 	for (k = 0; k < strlen(s1); k++)
 		conct[k] = s1[k];
 	for (k = 0; k < strlen(s2); k++)
