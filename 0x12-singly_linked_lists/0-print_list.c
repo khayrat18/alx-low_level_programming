@@ -10,8 +10,6 @@
  * Return: return number of elements
  */
 
-
-
 size_t print_list(const list_t *h)
 {
 	size_t count = 0;
@@ -28,10 +26,5 @@ size_t print_list(const list_t *h)
 		current = current->next;
 		count++;
 	}
-
 	return (count);
-	printf("\n");
-
-
-
 }
