@@ -5,7 +5,7 @@
  * @head: pointer to nodes
  * @index: index of node
  *
- * Return - the nth node, otherwise null
+ * Return: - the nth node, otherwise null
  */
 
 listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
@@ -15,7 +15,7 @@ listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 
 	while (current != NULL)
 	{
-		if (count == index - 1)
+		if (count == index)
 		{
 			return (current);
 		}
