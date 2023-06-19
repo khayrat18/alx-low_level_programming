@@ -13,14 +13,12 @@
 
 char *_strstr(char *haystack, char *needle)
 {
-	char *n;
-
-	n = strstr(haystack, needle);
-	if (n != 0)
-	{
-		return (n);
-	}
-	else
-		return (NULL);
+char *n;
+n = strstr(haystack, needle);
+if (n != 0)
+{
+return (n);
 }
-
+else
+return (NULL);
+}

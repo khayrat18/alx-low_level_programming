@@ -12,11 +12,13 @@
 
 unsigned int _strspn(char *s, char *accept)
 {
-	int x;
+int x;
+x = 0;
+x = strspn(s, accept);
+return (x);
 
-	x = 0;
-	x = strspn(s, accept);
-	return (x);
+
+
+
 
 }
-

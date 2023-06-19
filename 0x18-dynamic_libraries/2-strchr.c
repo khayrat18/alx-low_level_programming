@@ -11,18 +11,14 @@
 
 char *_strchr(char *s, char c)
 {
-	char *z;
+char *z;
+z = strchr(s, c);
+if (z != 0)
+{
+return (z);
 
-	z = strchr(s, c);
-
-	if (z != 0)
-	{
-		return (z);
-
-	}
-	else
-		return (NULL);
-	_putchar('\n');
 }
-
-
+else
+return (NULL);
+_putchar('\n');
+}
